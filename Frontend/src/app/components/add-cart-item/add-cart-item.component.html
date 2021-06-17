@@ -1,0 +1,22 @@
+<mat-card class="container" [formGroup]="cartItem">
+  <div class="brand-alert" *ngIf=brandAlert>
+    {{brandAlert}}
+  </div>
+  
+  <mat-card *ngFor="let product of products" (click)="addProduct(product)" class="card">
+    <div class="divTable">
+      <div class="divTableRow">
+        <div class="divTableCell p1"><img src="http://{{product.image}}" class="img-product"></div>
+        <div class="divTableCell p2">{{product.brand}} - {{product.description}} </div>
+      </div>
+    </div>    
+    <span class="price">$ {{product.price}}</span>
+    <!--div>
+      <p class="inner-photo"><img src="http://{{product.image}}" class="img-product"></p>
+      <p class="inner-card">{{product.brand}} - {{product.description}} - <span class="price">$ {{product.price}}</span></p>
+    </div-->
+    <p class="inner-add color-cart">
+      <i class="material-icons">add_shopping_cart</i> 
+    </p>
+  </mat-card>
+</mat-card>
