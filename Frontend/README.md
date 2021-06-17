@@ -14,8 +14,10 @@ This project was generated with [Angular CLI] version 6.0.0.
 
 ## Development server
 
-Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --port 8081` for dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
 Why this port? Because this app works in conjuntion with a backend service developed in Nodejs
+
+Before, I recommend to execute the NodeJS Backend built for this challenge. To do so, execute `node server.js` the server will run on `http://localhost:8080`
 
 ## Build
 
