@@ -1,7 +1,4 @@
 
-This app was developed using parts of code from (https://travis-ci.com/github/adithyasathu/angular-shopping-cart)
-I've implemented some connections to my own Backend built in Nodejs
-
 # Task
 Develop a simple Shopping cart application using my own backend.
 
