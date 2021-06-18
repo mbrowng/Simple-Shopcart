@@ -12,6 +12,7 @@ Develop a simple Shopping cart application using my own backend.
 This project was generated with [Angular CLI] version 6.0.0.
 
 ## Development server
+Run `npm install` to install libraries.
 
 Run `ng serve --port 8081` for dev server. Navigate to `http://localhost:8081/`.
 Why this port? Because this app works in conjuntion with a backend service developed in Nodejs
