@@ -1,0 +1,13 @@
+FROM node:12
+
+#App directory
+WORKDIR /usr/src/appCart
+
+#Install app dependencies
+
+RUN npm install
+
+RUN ng serve --port 8081
+
+#Expose port 8081
+EXPOSE 8081
