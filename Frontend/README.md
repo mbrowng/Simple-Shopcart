@@ -1,7 +1,4 @@
 
-This app was developed using parts of code from (https://travis-ci.com/github/adithyasathu/angular-shopping-cart)
-I've implemented some connections to my own Backend built in Nodejs
-
 # Task
 Develop a simple Shopping cart application using my own backend.
 
@@ -9,7 +6,6 @@ Develop a simple Shopping cart application using my own backend.
 - Modularity
 - Usage of service(s)
 - Unit tests
-- CSS Styling
 - Quality of code over quantity of code
 - Responsive design
 
@@ -17,8 +13,10 @@ This project was generated with [Angular CLI] version 6.0.0.
 
 ## Development server
 
-Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --port 8081` for dev server. Navigate to `http://localhost:8081/`.
 Why this port? Because this app works in conjuntion with a backend service developed in Nodejs
+
+Before, I recommend to execute the NodeJS Backend built for this challenge. To do so, execute `node server.js` (see Backend folder) the server will run on `http://localhost:8080`
 
 ## Build
 
