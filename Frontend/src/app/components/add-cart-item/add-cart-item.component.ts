@@ -18,6 +18,8 @@ import { ToastrService, ToastToken } from 'ngx-toastr';
 })
 
 export class AddCartItemComponent implements OnInit {
+  
+  public search:any = '';
 
   selectedItem: InventoryModel;
   items: InventoryModel[];

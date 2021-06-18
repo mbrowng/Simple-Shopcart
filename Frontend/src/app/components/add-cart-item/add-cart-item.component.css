@@ -39,6 +39,13 @@
   margin-top: 0px;
 }
 
+.search {
+  width: 98%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  height: 25px;
+}
+
 .price {
   color: #ff1111;
   font-weight: bold;

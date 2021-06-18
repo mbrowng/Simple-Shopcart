@@ -1,9 +1,9 @@
-<mat-card class="container" [formGroup]="cartItem">
+  <input type="text" class="search" placeholder="Buscar por Marca o Producto" [(ngModel)]="query" id="listSearch"/>
+  <mat-card class="container" [formGroup]="cartItem">
   <div class="brand-alert" *ngIf=brandAlert>
     {{brandAlert}}
   </div>
-  
-  <mat-card *ngFor="let product of products" (click)="addProduct(product)" class="card">
+  <mat-card *ngFor="let product of products | LockFilter: query" (click)="addProduct(product)" class="card">
     <div class="divTable">
       <div class="divTableRow">
         <div class="divTableCell p1"><img src="http://{{product.image}}" class="img-product"></div>

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddCartItemComponent } from './components/add-cart-item/add-cart-item.component';
 import { ListCartItemsComponent } from './components/list-cart-items/list-cart-items.component';
 import { ShoppingCartService } from './services/shopping-cart/shopping-cart.service';
@@ -13,18 +13,21 @@ import { HttpClientModule } from '@angular/common/http';
 
 //toast 
 import { ToastrModule } from 'ngx-toastr';
+import { SearchPipe } from './components/add-cart-item/pipe/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddCartItemComponent,
-    ListCartItemsComponent
+    ListCartItemsComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     ToastrModule.forRoot()
   ],
